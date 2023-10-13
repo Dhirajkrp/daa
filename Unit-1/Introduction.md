@@ -45,7 +45,7 @@ Algorithms are used in almost every filed which involes any form of computation.
 
 There are many misbeliefs relating alogoritms which should be clered in the beginning itself.
 
-1. Speed of the algorithm depends on the system: Well this may be true for a small amout of scale for example there might be a difference of few milliseconds or even few seconds depending on the processing speed of the different system, but we are talking about large scale data inputs here, just because we have a high end system an algorithm having exponential time complexity cannot be solved in liner time.
+1. **Speed of the algorithm depends on the system**: Well this may be true for a small amout of scale for example there might be a difference of few milliseconds or even few seconds depending on the processing speed of the different system, but we are talking about large scale data inputs here, just because we have a high end system an algorithm having exponential time complexity cannot be solved in liner time.
 
 To prove this point , lets see a simple function which finds the nth fibonacci number.
 
@@ -60,4 +60,23 @@ long nthFib(int n){
 
 A simple straight forward code which we have wrote for more than 10 times, try running it for a value of 100. You will be surprised.
 
-An interesting take , sorting an array of 100,000,000 numbers using merge sort is faster than finding the 50th fibonacci element using the above algorithm. So its not about the system it about the complexity of the algorithm which determines the speed.
+An interesting take , sorting an array of 100,000,000 numbers using merge sort 100,000,000 times is 100,000,000 times faster than finding the 100th fibonacci element using the above algorithm.
+
+In fact the above code can takes weeks to compute the 100th fibonacci number.
+
+So its not about the system it about the complexity of the algorithm which determines the speed.
+
+2. **All constant time algoritms take the same amont of time**: This is an interesting one , whenever we see an algorithm we tend to think that this takes no amount of time at all , however _constant time does not means no time_.By constant time we mean that it does not depends on the input value , this is an important differentiation to keep in mind.
+
+That constant time can be anything ranging from 0.001 ms to 5s. Thus some constants are smaller that other constants.
+
+For example we have studied that HashMap or HashSet has a constant time complexity for insertion , deletion ,searching etc, but we often tend to think that this constant time is same as the constant time which takes to access the array value provided the index.
+
+Lets take two case scenarios , we have to check if an array has any duplicate values or not.
+
+We might think that, okay a simple solution is to create a HashSet add all the values and at the end we can compare the size of the hashset and the original array, if they both are of same size the array does not contains any duplicate value, and traversing the array using two loops to check for duplicate values might not be optimal.
+
+And on parer one will be a O(1) and another will be O(n^2), but is it really that case ?
+
+for values less than 100 , then computational time is almost the same,
+so the const time for HashSet is a big number by itself.
