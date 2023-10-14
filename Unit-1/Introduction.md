@@ -80,3 +80,13 @@ And on parer one will be a O(1) and another will be O(n^2), but is it really tha
 
 for values less than 100 , then computational time is almost the same,
 so the const time for HashSet is a big number by itself.
+
+The motive here is not to say that using HashSet or HashMap is bad , it is just to state that not every O(1) is same and we should not blindly believe what we see on paper , priori analysis just gives the general overview of the rate of growth of the function as the size of n tends to infinity.
+
+3. **Algorithm is dependant on programming languages:** This is not true by any means and no matter the programming language algorithms do not change , one more thing to point out here is that writing the algorithm first and then writing the code is always better than directly jumping on to the code whitout putting much thought on the underlying algorithm.
+
+Most of the time programming is not about logic , its more about finding patterns and underlying concepts that can be applied for that particular problem.
+
+You might think that this is not true , we have been told soo many times that the core of programming is logic , well it is true to some extent but we don't have to come up with a new solution for each and every problem we come across , think about it how many of us could have come up with the binary search algorith , or the counting sort? sorting an array in O(n) it would have taken me 3 lives to come up a solution for that.
+
+So learn algorithms , learn data structures and learn to use those concepts for solving problem. :)
