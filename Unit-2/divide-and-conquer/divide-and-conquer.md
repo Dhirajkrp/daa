@@ -8,7 +8,7 @@ A typical Divide and Conquer algorithm solves a problem using following three st
 - Conquer: Solve sub-problems by calling recursively until solved.
 - Combine: Combine the sub-problems to get the final solution of the whole problem.
 
-[alt text](https://static.javatpoint.com/tutorial/daa/images/divide-and-conquer-introduction.png)
+![image for DAC](https://static.javatpoint.com/tutorial/daa/images/divide-and-conquer-introduction.png)
 
 ### Fundamental of Divide & Conquer Strategy:
 
