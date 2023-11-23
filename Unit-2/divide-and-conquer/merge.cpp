@@ -43,6 +43,10 @@ void merge(int arr1[], int arr2[] , int size_of_arr1 , int size_of_arr2 ){
 
 
 
+void sort(){
+    
+}
+
 int main(){
 
     int arr1[] = {2,4,8,21};
